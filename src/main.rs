@@ -43,7 +43,11 @@ fn main() {
             .join(&plugin_path)
             .expect("Failed to build URL");
 
-        println!("{}",absolute_url);
+        
+        println!("{}",&absolute_url);
         println!("  └ Plugin: {}",plugin);
+        println!("[+]Try Access: {}/readme.txt",absolute_url);
+        println!("");
+
     }
 }
